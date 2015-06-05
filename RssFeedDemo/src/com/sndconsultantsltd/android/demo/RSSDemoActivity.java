@@ -1,4 +1,4 @@
-package com.example.rssfeeddemo;
+package com.sndconsultantsltd.android.demo;
 
 import android.app.Activity;
 import android.os.Bundle;
