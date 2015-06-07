@@ -3,6 +3,7 @@
 
     <string name="app_name">Rss Feed Demo</string>
     <string name="hello_world">Only Me</string>
+    <string name="hello_world_2">Me Again</string>
     <string name="action_settings">Settings</string>
 
 </resources>

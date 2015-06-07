@@ -39,8 +39,10 @@ public class RSSDemoActivityTest {
 
 		assertThat(rssDemoAct).isNotNull();
 		TextView hwTV = (TextView) rssDemoAct.findViewById(R.id.hwTV);
+		TextView hw2TV = (TextView) rssDemoAct.findViewById(R.id.hw2TV);
 
 		assertThat(hwTV).isNotNull();
+		assertThat(hw2TV).isNotNull();
 
 	}
 
