@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="assests/features")
+@CucumberOptions(features="features")
 public class RunRssFeedDemoTest {
 
 }
