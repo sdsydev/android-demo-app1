@@ -14,24 +14,33 @@
         android:id="@+id/titleTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
-        android:text="@string/title" />
+        android:layout_marginStart="5dp"
+        android:text="@string/title"
+        android:textSize="32sp" />
 
     <TextView
         android:id="@+id/dateTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
-        android:text="@string/date" />
+        android:layout_marginStart="10dp"
+        android:text="@string/date"
+        android:textStyle="italic" />
 
-    <TextView
-        android:id="@+id/descTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="5dp"
-        android:layout_marginLeft="5dp"
-        android:text="@string/desc" />
+    <ScrollView
+        android:id="@+id/descScrV"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/descTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:text="@string/desc" />
+  />
+    </ScrollView>
 
 </LinearLayout>

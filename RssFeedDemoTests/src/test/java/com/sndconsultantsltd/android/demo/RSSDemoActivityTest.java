@@ -12,6 +12,7 @@ import org.robolectric.annotation.Config;
 
 import android.os.Build;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 
@@ -42,11 +43,13 @@ public class RSSDemoActivityTest {
 		ImageView imgIV = (ImageView)rssDemoAct.findViewById(R.id.imgIV);
 		TextView titleTV = (TextView) rssDemoAct.findViewById(R.id.titleTV);
 		TextView dateTV	= (TextView) rssDemoAct.findViewById(R.id.dateTV);
+		ScrollView descScrV = (ScrollView) rssDemoAct.findViewById(R.id.descScrV);
 		TextView descTV = (TextView) rssDemoAct.findViewById(R.id.descTV);
 	
 		assertThat(imgIV).isNotNull();
 		assertThat(titleTV).isNotNull();
 		assertThat(dateTV).isNotNull();
+		assertThat(descScrV).isNotNull();
 		assertThat(descTV).isNotNull();
 
 	}
