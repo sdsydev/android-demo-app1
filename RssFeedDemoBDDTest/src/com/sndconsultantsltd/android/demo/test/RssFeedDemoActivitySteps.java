@@ -1,6 +1,7 @@
 package com.sndconsultantsltd.android.demo.test;
 
 import android.test.ActivityInstrumentationTestCase2;
+//import static org.assertj.core.api.Assertions.assertThat;
 
 import com.sndconsultantsltd.android.demo.RSSDemoActivity;
 
@@ -11,15 +12,18 @@ import cucumber.api.java.en.When;
 public class RssFeedDemoActivitySteps extends
 		ActivityInstrumentationTestCase2<RSSDemoActivity> {
 
+
 	public RssFeedDemoActivitySteps() {
 		super(RSSDemoActivity.class);
 		
 	}
 
 	@Given("^I am launching the application$")
-	public void I_am_launching_the_application() throws Exception { 
+	public void I_am_launching_the_application() throws Exception {
+
 		System.out.println("in method ..I_am_launching_the_application()");
-		
+		assertNotNull(this);
+//		
 	}
 
 	@When("^I submit a text$")

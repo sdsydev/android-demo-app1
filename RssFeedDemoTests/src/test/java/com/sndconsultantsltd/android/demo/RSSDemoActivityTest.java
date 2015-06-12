@@ -11,6 +11,7 @@ import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 
 import android.os.Build;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -38,18 +39,22 @@ public class RSSDemoActivityTest {
 	public void allViewsPresent() {
 
 		assertThat(rssDemoAct).isNotNull();
-		TextView hwTV = (TextView) rssDemoAct.findViewById(R.id.hwTV);
-		TextView hw2TV = (TextView) rssDemoAct.findViewById(R.id.hw2TV);
-
-		assertThat(hwTV).isNotNull();
-		assertThat(hw2TV).isNotNull();
+		ImageView imgIV = (ImageView)rssDemoAct.findViewById(R.id.imgIV);
+		TextView titleTV = (TextView) rssDemoAct.findViewById(R.id.titleTV);
+		TextView dateTV	= (TextView) rssDemoAct.findViewById(R.id.dateTV);
+		TextView descTV = (TextView) rssDemoAct.findViewById(R.id.descTV);
+	
+		assertThat(imgIV).isNotNull();
+		assertThat(titleTV).isNotNull();
+		assertThat(dateTV).isNotNull();
+		assertThat(descTV).isNotNull();
 
 	}
 
 	@Test
-	public void manipulate_HWTV() {
+	public void manipulate_titleTV() {
 
-		final TextView hwTV = (TextView) rssDemoAct.findViewById(R.id.hwTV);
+		final TextView hwTV = (TextView) rssDemoAct.findViewById(R.id.titleTV);
 		final String tmpText = "Test Text";
 		// enter a text in the text field
 		rssDemoAct.runOnUiThread(new Runnable() {
@@ -65,10 +70,10 @@ public class RSSDemoActivityTest {
 	}
 	
 	@Test
-	public void validateHWText_OnlyMe_returnTrue(){
+	public void validateTitleText_Test_Title_returnTrue(){
 
-		final TextView hwTV = (TextView) rssDemoAct.findViewById(R.id.hwTV);
-		assertThat(hwTV.getText()).isEqualTo("Only Me");
+		final TextView hwTV = (TextView) rssDemoAct.findViewById(R.id.titleTV);
+		assertThat(hwTV.getText()).isEqualTo("Test Title");
 	}
 
 }

@@ -2,8 +2,11 @@
 <resources>
 
     <string name="app_name">Rss Feed Demo</string>
-    <string name="hello_world">Only Me</string>
-    <string name="hello_world_2">Me Again</string>
+    <string name="title">Test Title</string>
+    <string name="date">11 June 2015</string>
+    <string name="desc">This is a brief test description to how well this text works\nLets see if this breaks a line here\nand here</string>
     <string name="action_settings">Settings</string>
+    
+    
 
 </resources>
